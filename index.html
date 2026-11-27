@@ -1192,9 +1192,9 @@ body { padding-top: 40px; }
   // Oznam o dovolenke - načíta sa zo Supabase (tabuľka "oznamy", riadok web = demo-v1)
   // Zapína / vypína sa prepínačom vo farebnom paneli alebo priamo v Supabase Table Editore.
   document.addEventListener("DOMContentLoaded", () => {
-    const OZNAM_URL = "https://zlhxefiadxvvawbvekfh.supabase.co/rest/v1/";
+    const OZNAM_URL = "https://zlhxefiadxvvawbvekfh.supabase.co/";
     const OZNAM_KEY = "sb_publishable_-pYgjQcAxl2KfVbO0b0RuQ__ronYKd8"; // kľúč z Supabase (Project Settings > API)
-    const OZNAM_WEB = "demo-v1";
+    const OZNAM_WEB = "demo-colours";
 
     fetch(OZNAM_URL + "?select=zapnuty,riadok1,riadok2&web=eq." + encodeURIComponent(OZNAM_WEB), {
       headers: { apikey: OZNAM_KEY },
